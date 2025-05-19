@@ -27,3 +27,4 @@ RUN sed -i 's/\r$//' ./gradlew
 RUN ./gradlew build -x test
 
 # 애플리케이션 실행 준비
+ENTRYPOINT ["java", "-jar", "/app/build/libs/festino-main-0.0.1-SNAPSHOT.jar"]
